@@ -6,7 +6,7 @@ public class ColourPlayersOnSpawn : MonoBehaviour
     private void OnEnable()
     {
         if (NetworkManager.Singleton != null)
-            NetworkManager.Singleton.OnClientConnectedCallback += OnClientConnected;
+            NetworkManager.Singleton.OnClientConnectedCallback += OnClientConnected; 
     }
 
     private void OnDisable()

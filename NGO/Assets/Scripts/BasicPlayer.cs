@@ -37,7 +37,5 @@ public class BasicPlayer : NetworkBehaviour
         Vector2 move = moveAction.ReadValue<Vector2>();
         Vector3 move3 = new Vector3(move.x, 0f, move.y) * speed * Time.deltaTime;
         transform.position += move3;
-
-        Debug.Log($"map={playerInput.currentActionMap.name} move={moveAction.ReadValue<Vector2>()}");
     }
 }
