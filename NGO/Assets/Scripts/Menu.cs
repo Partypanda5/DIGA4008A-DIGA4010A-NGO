@@ -27,6 +27,7 @@ public class Menu : MonoBehaviour
     public void StartHost()
     {
         ushort port = GetPort();
+                string ip = GetIP();
         transport.SetConnectionData("0.0.0.0", port); // listen on all interfaces
 
         // set connection data first...                                              
